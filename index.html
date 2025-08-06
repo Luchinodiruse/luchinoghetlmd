@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao ghét thằng LMĐ</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        .item { margin: 10px 0; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Lý do tao ghét LMĐ</h1>
+    
+
+    <div id="list">
+        <div class="item">Lải nhải </div>
+        <div class="item">Ảo tưởng</div>
+        <div class="item">Biến thái</div>
+        <div class="item">Dê xồm</div>
+        <div class="item">cos xấu như đấm vào mắt</div>
+        <div class="item">ghét cái cách ảnh dạy mình cách chơi con main của mình</div>
+        <div class="item">hỏi mua mà đéo mua thì đừng hỏi làm gì ạ 1 lần thì không nói đây lại còn 2-3 lần </div>
+    </div>
+
+<img src="https://scontent.fhph1-1.fna.fbcdn.net/v/t1.15752-9/494856839_1472568323706909_58962141069896207_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=TnNuCCs3G2EQ7kNvwHAjFvh&_nc_oc=AdkF2_0jkSiEQdedpRmMS5j00SHGTXdoP3sbcEzeOEl_cdGhW3eojVpjGtpz34ZKqIkzrx3HJP7CYgqtIATeKe0j&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fhph1-1.fna&oh=03_Q7cD3AGHW2zi7S9Pyybr47bM2kK5Yy7Or3uDFQqEhixg_w5erw&oe=68B91BEC" alt="'lmdsucvat'"style='width:300px;height:300px;display:auto;margin: 20px 0;'>
+
+
+
+    <script>
+        const search = document.getElementById('search');
+        const items = document.querySelectorAll('.item');
+        search.addEventListener('input', function() {
+            const value = this.value.toLowerCase();
+            items.forEach(item => {
+                item.classList.toggle('hidden', !item.textContent.toLowerCase().includes(value));
+            });
+        });
+    </script>
+</body>
+</html>
